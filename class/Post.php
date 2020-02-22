@@ -24,7 +24,7 @@
 				$cat_id = $row['id'];
 				$date = date("Y-m-d H:i:s");
 
-				$query = mysqli_query($this->conn, "INSERT INTO news VALUES('','$title','$content','$added_by','$category','$cat_id','$image','$date','$tags','$status','$type','0','0','0',NOW());");
+				$query = mysqli_query($this->conn, "INSERT INTO news VALUES('$title','$content','$added_by','$category','$cat_id','$image','$date','$tags','$status','$type','0','0','0',NOW());");
 			}
 		}
 
